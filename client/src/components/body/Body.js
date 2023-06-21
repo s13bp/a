@@ -1,5 +1,10 @@
 import React from 'react'
 import {Switch, Route} from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'leaflet/dist/leaflet.css';
+import './Book/index.css'
+
+
 import Login from './auth/Login'
 import Register from './auth/Register'
 import ActivationEmail from './auth/ActivationEmail'
@@ -12,10 +17,18 @@ import Profile from '../body/profile/Profile'
 import EditUser from '../body/profile/EditUser'
 
 import Home from '../body/home/Home'
-import Map from '../body/nav/Map'
-import book from '../body/Book/book'
+import GoBook from './Book/GoBook'
+import Book from './Book/Book'
+import MapDisplay from './nav/Nav'
+
+
 
 import {useSelector} from 'react-redux'
+import Crypto from './Paycrypto/Paycrypto'
+import Checkout from './PayPal/Checkout';
+import HowItWorks from './HowItWorks/HowItWorks';
+
+
 
 function Body() {
     const auth = useSelector(state => state.auth)
@@ -25,8 +38,17 @@ function Body() {
             <Switch>
                 <Route path="/" component={Home} exact />
                 
-                <Route path="/nav" component={isLogged ? Map : NotFound} exact />
-                <Route path="/Book" component={isLogged ? book : NotFound} exact />
+
+                <Route path="/GoBook" component={isLogged ? GoBook : NotFound} exact />
+                <Route path="/Book" component={isLogged ? Book : NotFound} exact />
+                
+                
+                <Route path="/Nav" component={isLogged ?  MapDisplay : NotFound} exact />
+                <Route path="/PayPal" component={isLogged ?  Checkout : NotFound} exact />
+                <Route path="/HowItWorks" component={isLogged ?  HowItWorks : NotFound} exact />
+                
+                
+                <Route path="/Paycrypto" component={isLogged ? Crypto : NotFound} exact />
 
                 <Route path="/login" component={isLogged ? NotFound : Login} exact />
                 <Route path="/register" component={isLogged ? NotFound : Register} exact />

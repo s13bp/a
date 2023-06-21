@@ -1,16 +1,36 @@
-import React from 'react';
+import "./home.css";
+import React from 'react'
+import home01 from "./assets/home1.jpg";
+import home02 from "./assets/home2.jpg";
+import home03 from "./assets/home3.jpg";
+import Hero from "./components/Hero";
 
-import './home.css';
+import Slider from "./components/Slider";
 
-const Home = () => (
-  <div className="gpt3__header section__padding" id="home">
-      <div className="gpt3__header-content">
-        <h1 className="gradient__text">Let&apos;s Make Finding Your Parking Spot Easier</h1>
-        <p>By reserving a park in advance, you can plan your commute knowing you already have a spot in our parking lot.
-        You'll arrive on time, stress-free, and ready to work. </p>
-        </div>
-      </div>
+function Home() {
+  
+
+  return (
+    <div className="App">
+      
+      <Hero imageSrc={home01} />
+      <Slider
+        imageSrc={home02}
+        title={"Your Parking Lots Are On Track"}
+        subtitle={
+          "VIP Offers Quick Reservation For Your Clients"
+        }
+      />
+      <Slider
+        imageSrc={home03}
+        title={"Expand Your Horizons"}
+        subtitle={"VIP Offers Advanced Payment Methods For Your Clients"}
+        flipped={true}
+      />
+    </div>
   );
+}
 
+export default Home;
 
-  export default Home;
+  

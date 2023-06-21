@@ -110,12 +110,6 @@ function Login() {
                     onSuccess={responseGoogle}
                     cookiePolicy={'single_host_origin'}
                 />
-                <FacebookLogin
-                appId="1088597931155576"
-                autoLoad={false}
-                fields="name,email,picture"
-                callback={responseFacebook} 
-                />
                 
                 
 

@@ -1,7 +1,7 @@
 .login_page{
     max-width: 500px;
     margin: auto;
-    color: #444;
+    color: rgb(6, 1, 1);
     padding: 0 15px;
 }
 .login_page h2{
@@ -15,7 +15,7 @@
     width: 100%;
     height: 45px;
     margin: 10px 0;
-    border: 2px solid #777;
+    border: 2px solid rgb(12, 1, 1);
     outline: none;
     padding: 0 10px;
 }
@@ -53,7 +53,7 @@
     margin: 10px 0;
 }
 .login_page a{
-    color: rgb(234, 228, 228);
+    color: #031B34;
     font-weight: 600;
 }
 
@@ -74,7 +74,7 @@
 .fg_pass .row input{
     width: 100%;
     height: 45px;
-    border: 1px solid #ccc;
+    border: 1px solid #031B34;
     outline: none;
     padding: 0 15px;
     border-radius: 3px;
@@ -89,7 +89,7 @@
     border-radius: 3px;
     margin-top: 15px;
 }
-/* ---------- Facebook / Google ---------------- */
+/* ---------- Google ---------------- */
 .login_page .hr{
     margin: 15px 0;
     color: crimson;
