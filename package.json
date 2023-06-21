@@ -18,6 +18,9 @@
   "name": "vip",
   "version": "1.0.0",
   "main": "server.js",
+  "engines": {
+    "node": "18.16.0"
+  },
   "scripts": {
     "dev": "nodemon server.js",
     "server": "nodemon server.js --ignore client",
