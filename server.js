@@ -38,14 +38,14 @@ console.log('Connected to MongoDB')
 });
 
 if (process.env.NODE_ENV === "production") {
-    console.log("PRODUCTION MODE ACTIVE");
-    //app.use('/', express.static("/client/build"));
-    app.use(express.static("./client/build"));
-    app.get('*', (req, res) => {
-      res.sendFile(path.resolve(__dirname, './client/build','index.html'));
-    })}
+  app.use(express.static("client/build"));
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  });
+}
+
 
 const PORT = process.env.PORT || 5000
-app.listen(PORT, () => {
-    console.log('Server is running on port', PORT)
-})
+app.listen(PORT, function () {
+    console.log("Express server launched...");
+  });
