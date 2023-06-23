@@ -22,7 +22,7 @@
     "node": "18.16.0"
   },
   "scripts": {
-    "dev": "nodemon server.js",
+    "dev": "node server.js",
     "server": "nodemon server.js --ignore client"
   },
   "keywords": [],
@@ -30,6 +30,6 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.22"
   }
 }
