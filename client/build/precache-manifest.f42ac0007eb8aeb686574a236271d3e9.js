@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "61bd1c2249266ad5dda4",
+    "revision": "d2499bfcdb3eb1541c86",
     "url": "/static/css/main.620d4c17.chunk.css"
   },
   {
-    "revision": "61bd1c2249266ad5dda4",
-    "url": "/static/js/main.61bd1c22.chunk.js"
+    "revision": "d2499bfcdb3eb1541c86",
+    "url": "/static/js/main.d2499bfc.chunk.js"
   },
   {
     "revision": "79e242e5ae5d2ce7f6c1",
@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/static/media/credit-card.1a94b406.svg"
   },
   {
-    "revision": "4bd1908ca10237ded95b6a23f3161b6c",
+    "revision": "98f6b224a9f3a414241fb0dff9ece827",
     "url": "/index.html"
   }
 ];

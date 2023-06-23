@@ -222,7 +222,7 @@ function Book()  {
     if (selection.time && selection.date) {
       (async _ => {
         let datetime = getDate();
-        let res = await fetch("http://localhost:3000/availability", {
+        let res = await fetch("https://infinite-sierra-53366-8081e137bf48.herokuapp.com/availability", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
@@ -258,7 +258,7 @@ function Book()  {
     } else {*/
     { 
       const datetime = getDate();
-      let res = await fetch("http://localhost:3000/reserve", {
+      let res = await fetch("https://infinite-sierra-53366-8081e137bf48.herokuapp.com/reserve", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
