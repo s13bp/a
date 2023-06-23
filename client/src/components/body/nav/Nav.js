@@ -27,12 +27,12 @@ class MapDisplay extends Component {
   
   state = {
     greenIcon: {
-      lat: 36.8998757,
-      lng: 10.1908469,
+      lat: -1.2873365193799453, 
+      lng: 36.81822089044627,
     },
     redIcon: {
-      lat: 35.774416,
-      lng: -78.633271,
+      lat: -1.288768249338055, 
+      lng: 36.821057123302495,
     },
     orangeIcon: {
       lat: 35.772790,
