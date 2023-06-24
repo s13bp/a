@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   margin: 20px;
+  position: relative;
 
   opacity: 0;
   transform: scale(85%);

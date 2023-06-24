@@ -100,7 +100,7 @@ class MapDisplay extends Component {
         </Marker>
         <body>
           <div id="map"></div>
-          <button id="refreshButton" onclick="Book()">Zoom Into VIP</button>
+          <button id="refreshButton" onClick="Book()">Zoom Into VIP</button>
           
         </body>
       </Map>

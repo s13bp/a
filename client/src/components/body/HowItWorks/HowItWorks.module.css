@@ -7,10 +7,15 @@
 	text-transform: uppercase;
 	margin-bottom: 25px;
 	text-align: center;
-}
 
+}
+.sidebar {
+	background-image: url(./home1.jpg);
+	background: #ff8b7100;
+}
 .container {
 	padding: 0px 30px 30px;
+	background: #ff8b7100;
 }
 
 .item {

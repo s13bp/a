@@ -10,7 +10,7 @@ const HowItWorks = (props) => {
       <div className = 'sidebar'>
         
 
-        <h3 className = {classes.header}>How VIP Works</h3>
+        <h3 className = {classes.header}>How NAI-PARK Works</h3>
 
         <ul className = {classes.container}>
           <li className = {classes.item}>

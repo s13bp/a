@@ -5,7 +5,7 @@ const Hero = ({ imageSrc }) => {
   return (
     <div className="hero">
       <img src={imageSrc} alt="Travel" className="hero__image" />
-      <h1 className="hero__title">VIP Is A Software Developed For Parking Lot Owners</h1>
+      <h1 className="hero__title">Nairobi Parking Simplified</h1>
     </div>
   );
 };

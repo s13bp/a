@@ -115,7 +115,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .tables-display {
-  background-color: #040C18;
+  background-color: #eeeeee;
   
   margin: 10% 2%;
   padding: 3% 5%;

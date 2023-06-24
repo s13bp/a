@@ -14,19 +14,7 @@ function Home() {
     <div className="App">
       
       <Hero imageSrc={home01} />
-      <Slider
-        imageSrc={home02}
-        title={"Your Parking Lots Are On Track"}
-        subtitle={
-          "VIP Offers Quick Reservation For Your Clients"
-        }
-      />
-      <Slider
-        imageSrc={home03}
-        title={"Expand Your Horizons"}
-        subtitle={"VIP Offers Advanced Payment Methods For Your Clients"}
-        flipped={true}
-      />
+
     </div>
   );
 }

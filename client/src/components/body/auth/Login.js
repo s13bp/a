@@ -37,7 +37,7 @@ function Login() {
             localStorage.setItem('firstLogin', true)
 
             dispatch(dispatchLogin())
-            history.push("/")
+            history.push("/HowItWorks")
 
         } catch (err) {
             err.response.data.msg && 
@@ -101,19 +101,6 @@ function Login() {
                 </div>
             </form>
 
-            <div className="hr">Or Login With</div>
-
-            <div className="social">
-                <GoogleLogin
-                    clientId="228508894825-b5oqftkfa2g7fjm6pmhapp3kmt36j9d1.apps.googleusercontent.com"
-                    buttonText="Login with google"
-                    onSuccess={responseGoogle}
-                    cookiePolicy={'single_host_origin'}
-                />
-                
-                
-
-            </div>
 
             <p>New Customer? <Link to="/register">Register</Link></p>
         </div>

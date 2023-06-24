@@ -1,22 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
 header{
     width: 100%;
     min-height: 100px;
-    background:  #031B34;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0 30px;
+    padding: 0 50px 0 0;
+    z-index: 444;
+    box-shadow: 2px 10px 19px -4px rgba(0,0,0,0.87);
+-webkit-box-shadow: 2px 10px 19px -4px rgba(0,0,0,0.87);
+-moz-box-shadow: 2px 10px 19px -4px rgba(0,0,0,0.87);
+/* From https://css.glass */
+background: rgba(0, 0, 0, 0.71);
+
+
+backdrop-filter: blur(9.9px);
+-webkit-backdrop-filter: blur(9.9px);
+
 }
 header a{
-    color: #FF8A71;
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 1.5px;
+    font-family: 'Raleway', sans-serif;
 }
 header ul li{
     display: inline-block;
     padding: 10px 10px;
-    opacity: 0.7;
+    opacity: 1;
+    z-index: 444;
+    font-family: 'Raleway', sans-serif;
 }
 header ul li:hover{
     opacity: 1;
@@ -33,23 +49,41 @@ header ul li img{
 .drop-nav{
     position: relative;
     padding: 10px 0;
+    z-index: 444;
+
 }
 .drop-nav a{
     text-transform: capitalize;
     overflow: hidden;
+    z-index: 444;   
+
 }
 .drop-nav .dropdown{
     position: absolute;
-    background: #282c34;
+    background: #000000;
     width: 100%;
-    width: calc(100% + 30px);
+    color: rgb(253, 253, 253);
+    width: calc(100% + 50px);
     top: 50px;
+    z-index: 444;
     display: none;
+    min-height: 300px !important;
 }
 .drop-nav .dropdown li{
     display: block;
+    z-index: 444;
+    position: relative;
+
+
+
 }
 .drop-nav:hover .dropdown{
     display: block;
-}
 
+
+
+}
+.logo {
+    height: 100px;
+    width: auto;
+}
